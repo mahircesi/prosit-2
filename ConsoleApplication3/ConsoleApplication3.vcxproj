@@ -141,14 +141,14 @@
   <ItemGroup>
     <ClCompile Include="ConsoleApplication3.cpp" />
     <ClCompile Include="cryptfile.cpp" />
-    <ClCompile Include="readfile.cpp" />
-    <ClCompile Include="writefile.cpp" />
+    <ClCompile Include="readwritefile.cpp" />
+    <ClCompile Include="service.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cryptfile.h" />
-    <ClInclude Include="readfile.h" />
+    <ClInclude Include="readwritefile.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="writefile.h" />
+    <ClInclude Include="service.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt" />

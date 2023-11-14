@@ -1,17 +1,16 @@
-#include "readfile.h"
+#include "readwritefile.h"
 #include <iostream>
 
-readfile::readfile() { //constructeur
+readwritefile::readwritefile() { //constructeur
     this->path = "";
     this->data = "";
+}
+
+readwritefile::~readwritefile() { //destructeur
 
 }
 
-readfile::~readfile() { //destructeur
-
-}
-
-void readfile::readdata(){
+void readwritefile::readdata(){
     cout << "Specify the path or the file name" << endl;
     cin >> path;
     cout << "\n";
@@ -33,6 +32,16 @@ void readfile::readdata(){
     }
 }
 
-string readfile::getdata() {
+string readwritefile::getdata() {
     return data;
+}
+
+
+void readwritefile::writedata(string d) {
+    cout << "Specify the path and the file name for you encrypted file" << endl;
+    string crypath;
+    cin >> crypath;
+    ofstream MyFile(crypath);
+    MyFile << d;
+    MyFile.close();
 }

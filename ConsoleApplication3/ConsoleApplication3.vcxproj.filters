@@ -18,18 +18,18 @@
     <ClCompile Include="ConsoleApplication3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="readfile.cpp">
+    <ClCompile Include="readwritefile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cryptfile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="writefile.cpp">
+    <ClCompile Include="service.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="readfile.h">
+    <ClInclude Include="readwritefile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cryptfile.h">
@@ -38,7 +38,7 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="writefile.h">
+    <ClInclude Include="service.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

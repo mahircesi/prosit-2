@@ -1,20 +1,36 @@
 #include <iostream>
-#include "readfile.h"
-#include "cryptfile.h"
-#include "writefile.h"
+#include "service.h"
+#include <iostream>
+#include <sstream>
+#include <bitset>
+#include <string>
 
-readfile test;
-cryptfile test2;
-writefile test3;
+
 
 int main()
 {
-    test.readdata();
-    test2.cesar(test.getdata());    
-    test3.setdata(test2.getcrypteddata());
-    test3.writedata();
+	int temp;
+	cout << "Hello, what would you like to do ? " << endl;
+	cout << "1 : CRYPT a file" << endl;
+	cout << "2 : DECRYPT a file" << endl;
+	cin >> temp; cout << endl;
+
+	if (temp == 1) {
+		cout << "You want to CRYPT." << endl;
+		service S;
+		S.read();
+		S.crypt();
+		S.write();
+	}
+	if(temp == 2) {
+		cout << "You want to DECRYPT." << endl;
+		service S2;
+		S2.read();
+		S2.decrypt();
+		S2.write();
+	}
+} 
 
 
-}
 
 

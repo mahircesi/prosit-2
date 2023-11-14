@@ -3,17 +3,18 @@
 #include <string>
 using namespace std;
 
-class readfile
+class readwritefile
 {
 protected:
 	string path; // Path and/or file name
 	string data;
 
 public:
-	readfile(); //constructeur
+	readwritefile(); //constructeur
 	void readdata();
 	string getdata();
-	~readfile();// destructeur
+	void writedata(string d);
+	~readwritefile();// destructeur
 	
 };
 
