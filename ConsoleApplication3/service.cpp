@@ -21,7 +21,7 @@ void service::read() {
 }
 void service::write() {
 	Odata->writedata(Odata2->getcrypteddata());
-	delete Odata, Odata;
+	delete Odata, Odata2;
 }
 void service::crypt() {
 	this->Odata2 = new cryptfile(); // Object2 built
