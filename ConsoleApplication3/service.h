@@ -7,7 +7,6 @@ using namespace std;
 
 class service
 {private:
-	string data;
 	readwritefile *Odata;
 	cryptfile* Odata2;
 public:
