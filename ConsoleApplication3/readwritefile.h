@@ -5,7 +5,7 @@ using namespace std;
 
 class readwritefile
 {
-protected:
+private:
 	string path; // Path and/or file name
 	string data;
 
