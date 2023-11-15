@@ -25,6 +25,7 @@ void readwritefile::readdata(){
             data.append("\n");
         }
         cout << "Data read." << endl; cout << "\n" << endl;
+	file.close();
     }
     else
     {
